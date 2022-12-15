@@ -12,7 +12,7 @@ General
 */
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 body {
@@ -34,8 +34,8 @@ a {
 }
 
 ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 li {
@@ -69,7 +69,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 .nav__logo--img {
@@ -104,7 +103,7 @@ nav {
 /* React Templates Section */
 
 #react {
-    height: calc(100vh -80px);
+  height: calc(100vh -80px);
 }
 
 .container {
@@ -124,7 +123,7 @@ nav {
 .react__img--wrapper {
   width: 60%;
   display: flex;
-  align-self: flex-end;
+  align-items: center;
 }
 
 .react__description--header {
@@ -193,36 +192,84 @@ Service Section
 */
 
 .row__service {
-    display: flex;
-    flex-direction: column;
-    padding: 85px;
+  display: flex;
+  flex-direction: column;
+  padding: 85px;
 }
 
 .service__span--header {
-    margin-bottom: 50px;
-    font-size: 32px;
-    letter-spacing: 0.1em;
+  margin-bottom: 50px;
+  font-size: 32px;
+  letter-spacing: 0.1em;
 }
 
-.service__header{
-    font-size: 72px;
-    font-weight: 900;
-    letter-spacing: 0.05em;
-    width: 100%;
-    text-align: center;
+.service__header {
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  width: 100%;
+  text-align: center;
 }
 
-.service__description--subtitle {
-    font-size: 32px;
-    text-align: center;
-    margin-top: 24px;
-    max-width: 900px;
-    width: 100%;
+.service__description--sub-title {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 40px;
+  max-width: 900px;
+  width: 100%;
+  opacity: 0.5;
 }
 
 .vertical__spacer {
-    width: 100%;
-    margin-top: 140px;
+  width: 100%;
+  margin-top: 140px;
+}
+
+/*
+
+Service Boxes
+
+*/
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__description {
+  width: calc(100% / 3);
+  padding: 30px 54px;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+.servce__description--header {
+  margin-bottom: 24px;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 900;
+  opacity: 0.8;
+}
+
+.service__description--para {
+  font-size: 30px;
+  line-height: 2.5;
+}
+
+.service__img--wrapper {
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 100px;
+  position: relative;
+  max-width: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__img {
+  padding: 34px;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
