@@ -11,6 +11,10 @@ General
 
 */
 
+p {
+    line-height: 1.5;
+}
+
 body {
   padding: 40px;
 }
@@ -20,14 +24,18 @@ a {
 }
 
 .row {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  margin-bottom: 24px;
+  padding: 80px 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
 }
 
 li {
@@ -44,7 +52,7 @@ Nav Bar
 
 */
 nav {
-  height: 80px;
+  height: 100px;
   display: flex;
   align-items: center;
 }
@@ -53,16 +61,19 @@ nav {
   text-decoration: none;
   margin-left: 16px;
   color: rgba(0, 0, 0, 0.8);
+  font-size: 44px;
+  font-weight: 900;
 }
 
 .nav__logo {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .nav__logo--img {
-  width: 50px;
+  width: 70px;
   opacity: 0.8;
 }
 
@@ -74,7 +85,7 @@ nav {
 .nav__link--primary,
 .nav__link--second {
   padding: 0 18px;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -85,15 +96,19 @@ nav {
 .nav__link--primary {
   background-color: #7342d6;
   color: white;
-  padding: 12px 32px;
+  padding: 12px 44px;
   margin-left: 12px;
   border-radius: 50px;
 }
 
 /* React Templates Section */
 
-.react__container {
-  height: 1000px;
+#react {
+    height: calc(100vh -80px);
+}
+
+.container {
+  margin: 100px 0 150px 0;
 }
 
 .react__description {
@@ -113,21 +128,26 @@ nav {
 }
 
 .react__description--header {
-  font-size: 60px;
+  font-size: 72px;
+  font-weight: 900;
 }
 
 .react__description--para {
-  margin: 36px 0;
+  margin: 60px 0;
   font-size: 36px;
 }
 
 .react__description--para-header {
-  opacity: 0.5;
-  margin: 32px 0;
+  opacity: 0.3;
+  margin: 40px 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 .react__description--img {
   width: 100%;
+  opacity: 0.3;
 }
 
 .react__description--wrapper {
@@ -164,6 +184,45 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* 
+
+Service Section
+
+*/
+
+.row__service {
+    display: flex;
+    flex-direction: column;
+    padding: 85px;
+}
+
+.service__span--header {
+    margin-bottom: 50px;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+}
+
+.service__header{
+    font-size: 72px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    width: 100%;
+    text-align: center;
+}
+
+.service__description--subtitle {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 24px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.vertical__spacer {
+    width: 100%;
+    margin-top: 140px;
 }
 
 @media (max-width: 1024px) {
