@@ -194,13 +194,12 @@ Service Section
 .row__service {
   display: flex;
   flex-direction: column;
-  padding: 85px;
 }
 
 .service__span--header {
   margin-bottom: 50px;
   font-size: 32px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 
 .service__header {
@@ -235,45 +234,110 @@ Service Boxes
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .service__description {
   width: calc(100% / 3);
-  padding: 30px 54px;
+  padding: 30px 40px;
   text-align: left;
   margin-bottom: 70px;
-}
-
-.servce__description--header {
-  margin-bottom: 24px;
-  text-align: left;
-  font-size: 50px;
-  font-weight: 900;
-  opacity: 0.8;
-}
-
-.service__description--para {
-  font-size: 30px;
-  line-height: 2.5;
+  display: flex;
+  align-items: flex-start;
 }
 
 .service__img--wrapper {
   border: 1px solid rgb(201, 201, 201);
   border-radius: 100px;
-  position: relative;
   max-width: 124px;
+  width: 100%;
+  display: inline-block;
+  margin-right: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .service__img {
-  padding: 34px;
+  width: 100%;
+  padding: 30px;
+}
+
+.service__description--container {
+  margin: 16px 0 0 16px;
+}
+
+.servce__description--header {
+  margin-bottom: 24px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 900;
+  opacity: 0.8;
+}
+
+.service__description--para {
+  font-size: 25px;
+  line-height: 2.5;
+  opacity: 0.;
+}
+
+
+/*
+
+Quality Section
+
+*/
+
+.quality__description {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quality__img--wrapper {
+  width: 47%;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(227, 227, 227);
+  border-radius: 6px;
+}
+
+.quality__img {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .nav__link {
-    display: none;
-  }
+.quality__span--header,
+.quality__description--title
+.quality__description--para,
+.quality__button {
+  text-align:left;
+}
+
+
+.quality__span--header {
+  margin-bottom: 50px;
+  font-size: 32px;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+
+.quality__description--title{
+  font-size: 80px;
+  font-weight: 900;
+  opacity: 0.9;
+}
+
+.quality__description--para{
+  font-size: 32px;
+  margin: 54px 0;
+  max-width: 900px;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.quality__button {
+
+}
+
+body {
+  overflow-x: hidden;
 }
