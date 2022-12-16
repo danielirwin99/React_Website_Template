@@ -11,6 +11,14 @@ General
 
 */
 
+h4 {
+  font-size: 36px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 p {
   line-height: 1.5;
 }
@@ -30,7 +38,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 ul {
@@ -197,8 +205,8 @@ Service Section
 }
 
 .service__span--header {
-  margin-bottom: 50px;
-  font-size: 32px;
+  margin-bottom: 30px;
+  font-size: 24px;
   letter-spacing: 0.15em;
 }
 
@@ -259,7 +267,7 @@ Service Boxes
 
 .service__img {
   width: 100%;
-  padding: 30px;
+  padding: 36px;
 }
 
 .service__description--container {
@@ -277,9 +285,8 @@ Service Boxes
 .service__description--para {
   font-size: 25px;
   line-height: 2.5;
-  opacity: 0.;
+  opacity: 0.5;
 }
-
 
 /*
 
@@ -306,12 +313,10 @@ Quality Section
 }
 
 .quality__span--header,
-.quality__description--title
-.quality__description--para,
+.quality__description--title .quality__description--para,
 .quality__button {
-  text-align:left;
+  text-align: left;
 }
-
 
 .quality__span--header {
   margin-bottom: 50px;
@@ -320,14 +325,16 @@ Quality Section
   text-align: left;
 }
 
-.quality__description--title{
+.quality__description--title {
   font-size: 80px;
   font-weight: 900;
   opacity: 0.9;
+  letter-spacing: 0.05em;
 }
 
-.quality__description--para{
-  font-size: 32px;
+.quality__description--para,
+.pricing__description--para {
+  font-size: 28px;
   margin: 54px 0;
   max-width: 900px;
   width: 100%;
@@ -335,9 +342,254 @@ Quality Section
 }
 
 .quality__button {
-
+  color: white;
+  background-color: #7342d6;
+  padding: 20px 40px;
+  border: none;
+  max-width: 250px;
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-body {
-  overflow-x: hidden;
+/*
+
+Steps 
+
+*/
+
+.row__values {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+
+.number__list,
+.number__list--first {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  width: 30%;
+  font-size: 72px;
+  opacity: 0.5;
+  text-align: left;
+}
+
+.steps__description--wrapper {
+  display: flex;
+  margin: 40px 0;
+}
+
+.steps__description--para {
+  font-size: 32px;
+  margin-top: 24px;
+  max-width: 900px;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.steps__description {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.register {
+  margin-right: 20px;
+}
+
+.number__list--first {
+  width: 26%;
+}
+
+/* 
+
+Values 
+
+*/
+
+.values__description {
+  width: 50%;
+}
+
+.values__img--wrapper {
+  width: 50%;
+}
+
+.values__img {
+  width: 100%;
+}
+
+.values__description--wrapper-one {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.values__description--wrapper-two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.values__span-one {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 12px;
+}
+
+.dollar-sign {
+  width: 60px;
+  margin-right: 12px;
+}
+
+.luggage-img {
+  width: 60px;
+  margin-right: 12px;
+}
+
+.values__description--wrapper {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.values__description--para {
+  margin-top: 16px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+}
+
+/*
+
+Pricing 
+
+*/
+
+.row__plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__description--para {
+  text-align: center;
+  margin: 48px 0;
+}
+
+.pricing__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__section--personal,
+.pricing__section--business,
+.pricing__section--enterprise {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.pricing__section--business {
+  padding-top: 14px;
+  background-color: rgb(76, 81, 191);
+  color: white;
+}
+
+.banner__blue {
+  height: 14px;
+  width: 100%;
+  background-color: rgb(129, 230, 217);
+}
+
+.banner__red {
+  height: 14px;
+  background-color: rgb(245, 101, 101);
+}
+
+.personal {
+  padding-top: 40px 0;
+}
+
+.pricing__header {
+  font-size: 30px;
+  margin: 40px;
+}
+
+.pricing__sub-header {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.pricing__monthly {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 0;
+  opacity: 0.5;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.pricing__description {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing__header--list {
+  padding: 24px 0;
+  letter-spacing: 0.05em;
+  font-size: 28px;
+}
+
+.feature {
+  padding: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0.9;
+  letter-spacing: 0.04em;
+}
+
+.pricing__button--wrapper {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__button {
+  padding: 0 20px;
+}
+
+.personal__button,
+.business__button,
+.enterprise__button {
+  padding: 30px 28px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  background-color: rgb(129, 230, 217);
+  font-weight: 900;
+}
+
+.business__button {
+  color: rgb(100 21 255);
+  background-color: rgb(247 250 252);
+}
+
+.enterprise__button {
+  background-color: rgb(245, 101, 101);
 }
