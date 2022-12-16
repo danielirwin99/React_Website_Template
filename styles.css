@@ -865,6 +865,8 @@ Copyright Footer
   padding: 20px 24px;
 }
 
+/* Small Computer Screens */
+
 @media (max-width: 1024px) {
   .nav__link--primary,
   .nav__link--second {
@@ -1011,5 +1013,83 @@ Copyright Footer
 
   .footer__logo--header {
     font-size: 20px;
+  }
+}
+
+/* Small phones, Tablets Etc */
+
+@media (max-width: 768px) {
+  .quality__description--title {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  .number__list,
+  .number__list--first {
+    font-size: 40px;
+  }
+
+  .steps__description--para {
+    font-size: 24px;
+  }
+
+  .values__img--wrapper {
+    position: relative;
+    bottom: 115px;
+  }
+
+  .pricing__header {
+    font-size: 20px;
+  }
+
+  .ratings__img--person {
+    max-width: 80px;
+    height: 50%;
+    text-align: center;
+  }
+
+  .pricing__section--personal {
+    height: 100%;
+  }
+
+  .pricing__sub-header {
+    font-size: 30px;
+  }
+
+  .personal__button,
+  .business__button,
+  .enterprise__button {
+    font-size: 16px;
+  }
+
+
+  .box__buttons{
+   
+  }
+
+.box__buttons--wapper {
+  max-width: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+  .get-started {
+    display: none;
+  }
+
+  .contact-us {
+    font-size: 30px;
+    background-color: rgb(245 101 101);
+    margin-right: 40px;
+  }
+
+  .footer__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
