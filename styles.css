@@ -29,7 +29,7 @@ a {
 }
 
 .row {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -79,6 +79,8 @@ nav {
 
 .nav__links {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__link,
@@ -235,14 +237,12 @@ Service Boxes
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .service__description {
-  width: calc(100% / 3);
-  padding: 30px 40px;
+  width: 30%;
   text-align: left;
-  margin-bottom: 70px;
+  margin: 0 12px;
   display: flex;
   align-items: flex-start;
 }
@@ -250,9 +250,8 @@ Service Boxes
 .service__img--wrapper {
   border: 1px solid rgb(201, 201, 201);
   border-radius: 100px;
-  max-width: 124px;
-  width: 100%;
   display: inline-block;
+  width: 100%;
   margin-right: 10px;
   display: flex;
   align-items: center;
@@ -260,7 +259,7 @@ Service Boxes
 
 .service__img {
   width: 100%;
-  padding: 36px;
+  padding: 30px;
 }
 
 .service__description--container {
@@ -270,7 +269,7 @@ Service Boxes
 .servce__description--header {
   margin-bottom: 24px;
   text-align: left;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 900;
   opacity: 0.8;
 }
@@ -715,12 +714,12 @@ Box
 }
 
 .box__description {
-  align-items: end;
+  text-align: right;
 }
 
 .box-header {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .box__buttons {
@@ -796,7 +795,6 @@ footer {
   color: white;
 }
 
-
 .link__hover-effect--white:after {
   content: "";
   background-color: white;
@@ -831,7 +829,6 @@ Copyright Footer
   align-items: center;
   margin-top: 40px;
 }
-
 
 .footer__logo--img {
   max-width: 50px;
@@ -868,4 +865,151 @@ Copyright Footer
   padding: 20px 24px;
 }
 
+@media (max-width: 1024px) {
+  .nav__link--primary,
+  .nav__link--second {
+    font-size: 24px;
+  }
 
+  .nav__logo--header {
+    font-size: 40px;
+  }
+
+  .nav__logo--img {
+    width: 60px;
+  }
+
+  .nav__link {
+    display: none;
+  }
+
+  .row {
+    padding: 40px;
+  }
+
+  .react__description--header {
+    font-size: 50px;
+  }
+
+  .react__description--para {
+    font-size: 30px;
+  }
+
+  .react__email--button {
+    font-size: 15px;
+  }
+
+  .email {
+    font-size: 15px;
+  }
+
+  .service__header {
+    font-size: 50px;
+  }
+
+  .service__description {
+    width: 45%;
+  }
+
+  .service__img {
+    padding: 25px;
+  }
+
+  .service__img--wrapper {
+    max-width: 80px;
+  }
+
+  .quality__description--title {
+    font-size: 50px;
+    text-align: left;
+  }
+  .quality__description--para {
+    font-size: 24px;
+  }
+
+  .quality__img--wrapper {
+    width: 50%;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  .number__list--first,
+  .number__list {
+    font-size: 50px;
+    margin-right: 10px;
+  }
+
+  .steps__description--para {
+    font-size: 30px;
+  }
+
+  .quality__description--title {
+    font-size: 50px;
+  }
+
+  .row__values {
+    margin-top: 50px;
+  }
+
+  .dollar-sign,
+  .luggage-img {
+    max-width: 40px;
+  }
+
+  .pricing__description--para {
+    font-size: 20px;
+  }
+
+  .pricing__header--list {
+    font-size: 20px;
+  }
+
+  .pricing__sub-header {
+    font-size: 36px;
+  }
+
+  .ratings__description--sub-para {
+    font-size: 16px;
+  }
+
+  .box-header {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 10px;
+    margin-left: 10px;
+  }
+
+  .get-started,
+  .contact-us {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 42px;
+  }
+
+  .footer__header {
+    font-size: 20px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
+
+  .copyright-para {
+    font-size: 16px;
+  }
+
+  .footer__social {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+
+  .footer__logo--img {
+    max-width: 30px;
+  }
+
+  .footer__logo--header {
+    font-size: 20px;
+  }
+}
