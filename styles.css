@@ -36,6 +36,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 70px 0;
+  animation:fade-right 1000ms 300ms ease;
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 li {
@@ -55,6 +67,7 @@ nav {
   height: 100px;
   display: flex;
   align-items: center;
+  animation: fade-right 800ms 300ms backwards;
 }
 
 .nav__logo--header {
@@ -186,6 +199,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 /* 
@@ -197,6 +211,18 @@ Service Section
 .row__service {
   display: flex;
   flex-direction: column;
+  animation: fade-left 650ms 300ms backwards ;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
 }
 
 .service__span--header {
@@ -344,6 +370,7 @@ Quality Section
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /*
@@ -351,6 +378,10 @@ Quality Section
 Steps 
 
 */
+
+.row__steps {
+  animation: fade-left 1200ms 300ms backwards ;
+}
 
 .row__values {
   display: flex;
@@ -590,6 +621,7 @@ Pricing
   letter-spacing: 0.05em;
   background-color: rgb(129, 230, 217);
   font-weight: 900;
+  cursor: pointer;
 }
 
 .business__button {
@@ -795,20 +827,29 @@ footer {
   color: white;
 }
 
+.link__hover-effect:after,
 .link__hover-effect--white:after {
   content: "";
-  background-color: white;
+  background-color: black;
   position: absolute;
   height: 3px;
   width: 0;
   bottom: -6px;
   right: 0;
-  transition: all 300ms ease;
+  transition: all 400ms ease;
 }
 
-.link__hover-effect--white:hover:after {
+.nav__link--primary:hover {
+  background-color: #5d3eff;
+}
+
+.link__hover-effect:hover:after {
   width: 100%;
   left: 0;
+}
+
+.link__hover-effect--white:after {
+  background-color: white;
 }
 
 .footer__spacer {
